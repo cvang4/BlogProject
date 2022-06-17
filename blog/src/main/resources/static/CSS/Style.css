@@ -39,6 +39,11 @@ h1{
 } */
 
 #card:hover {
+    /* This is the original */
     background-color: #D91A5F;
+
+    /* This is just to test */
+    /* background-color: pink; */
+
     transition: background-color 1s;
 }

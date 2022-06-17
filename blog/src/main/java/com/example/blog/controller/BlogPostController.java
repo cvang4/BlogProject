@@ -79,23 +79,6 @@ public class BlogPostController {
         return "/posts/User";
     }
 
-//    @GetMapping("deletepost/{id}/confirm")
-//    public String delete(@PathVariable (value = "id") long id) {
-//        //this.blogPostService.deleteById(id);
-//        return "redirect:/posts/User";
-//    }
-//
-
-//
-//
-//    @RequestMapping("deletepost/{id}")
-//        public String saveDelete(@PathVariable("id") Long id, Model model) {
-//     BlogPost blogPost = blogPostService.findById(id);
-//     model.addAttribute("blogPost", blogPost);
-//     return "redirect:/posts/User";
-//
-//    }
-
     @GetMapping("/deleteById/{id}")
     public String deleteById(@PathVariable (value = "id") Long id) {
         blogPostService.deleteById(id);
